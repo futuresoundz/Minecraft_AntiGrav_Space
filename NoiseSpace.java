@@ -22,7 +22,7 @@ public class NoiseSpace extends JavaPlugin implements Listener {
             public void run(){
                 for (Player p : Bukkit.getOnlinePlayers()){
 
-                    if (p.getInventory().getHelmet() != null && p.getInventory().getHelmet().getType() == Material.IRON) {
+                    if (p.getInventory().getHelmet() != null && p.getInventory().getHelmet().getType() == Material.IRON_HELMET) {
                         p.sendMessage(ChatColor.GREEN + "Sweet Helmet.");
                     }
                     else {
