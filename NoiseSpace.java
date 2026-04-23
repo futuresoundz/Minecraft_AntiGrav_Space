@@ -23,11 +23,12 @@ public class NoiseSpace extends JavaPlugin implements Listener {
                 for (Player p : Bukkit.getOnlinePlayers()){
 
                     if (p.getInventory().getHelmet() != null && p.getInventory().getHelmet().getType() == Material.IRON_HELMET) {
-                        p.sendMessage(ChatColor.GREEN + "Sweet Helmet.");
                     }
                     else {
                        p.damage(1);
+                        if (count % 10 == 0);{
                         p.sendMessage(ChatColor.RED + "CAN'T BREATHE! PUT ON HELMET! SEND FOR HELP!!");
+                        }
                     }
                 }
             }
